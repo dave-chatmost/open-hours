@@ -86,3 +86,6 @@ const abbrFormat = {
   dayFmt: 'abbr',
   periodFmt: {0: 'am', 1: 'pm'}
 }
+
+
+export default {parse, format}
