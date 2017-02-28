@@ -1,0 +1,24 @@
+{
+  "name": "open-hours",
+  "version": "0.1.0",
+  "description": "A library for handling opening hours for businesses.",
+  "scripts": {
+    "prepublish": "rm -rf lib && mkdir lib && npm run generate",
+    "generate": "./node_modules/.bin/babel src -d lib"
+  },
+  "author": "",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "latest"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-latest": "^6.22.0"
+  }
+}
